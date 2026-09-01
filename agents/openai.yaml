@@ -1,0 +1,7 @@
+interface:
+  display_name: "穿搭提示词生成器"
+  short_description: "生成三至五套美观、结构准确且具有畅销感的中文穿搭提示词"
+  default_prompt: "使用 $outfit-prompt-generator，根据我的服装类别生成三至五套审美在线、风格不同且可继续修改的中文出图提示词。"
+
+policy:
+  allow_implicit_invocation: true
