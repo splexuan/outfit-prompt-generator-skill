@@ -1,7 +1,7 @@
 interface:
   display_name: "穿搭提示词生成器"
-  short_description: "生成层次清晰的服装提示词，并从人物图反推穿搭"
-  default_prompt: "使用 $outfit-prompt-generator，根据我的服装需求生成带方案总览和结构化字段的中文出图提示词，或从人物图反推无人物、无衣架的穿搭提示词。"
+  short_description: "为成年年轻女性设计梦幻少女感、华丽吸睛的AI影像服装提示词"
+  default_prompt: "使用 $outfit-prompt-generator，为成年年轻女性设计适合 AI 舞蹈视频、写真、时装秀或幻想角色的吸睛服装提示词；默认采用白色或浅色摄影棚背景、真实面料质感和一个完整正面单一视图。"
 
 policy:
   allow_implicit_invocation: true
