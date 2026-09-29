@@ -1,7 +1,17 @@
 interface:
   display_name: "穿搭提示词生成器"
   short_description: "为成年年轻女性设计梦幻少女感、华丽吸睛的AI影像服装提示词"
-  default_prompt: "使用 $outfit-prompt-generator，为成年年轻女性设计适合 AI 舞蹈视频、写真、时装秀或幻想角色的吸睛服装提示词；默认采用白色或浅色摄影棚背景、真实面料质感和一个完整正面单一视图。"
+  default_prompt: "使用 $outfit-prompt-generator，为成年年轻女性设计适合 AI 舞蹈视频、写真、时装秀或幻想角色的吸睛服装提示词；默认华丽繁复、真实面料质感，主衣物以有肩腰胯比例但不出现可见人台的悬浮陈列呈现，背景默认固定为浅色无缝摄影棚。需要把整套拆成可单独截图的部件时，说“做成部件拆解板”。"
 
 policy:
   allow_implicit_invocation: true
+
+trust:
+  source_tier: "local"
+  network_access: "none"
+  shell_execution: "none"
+  filesystem_write: "none"
+  file_reads: "skill-directory-only"
+  remote_inline_execution: "forbid"
+  remote_metadata_policy: "allow-metadata-only"
+  notes: "纯指令型 Skill，仅读取自身 references/ 下的资料文件；不联网、不执行命令、不写入文件。出图由宿主提供的图像生成工具承担，平台参数以用户提供或平台官方文档为准，不凭记忆编造。"
